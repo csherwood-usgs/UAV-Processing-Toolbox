@@ -12,7 +12,7 @@ close all
 
 addpath(genpath('.')) % adds folder dependencies 
 %gcp file path 
-addpath(genpath('/LocalDisk(D:)/Scordato_SSF_2018/Projects/SandwichBeachCam/extrinsic_calibration')
+addpath(genpath('/Users/patrickscordato/UAV-Processing-Toolbox')
 % intrinsic file path 
 addpath(genpath('/LocalDisk(D:)/Scordato_SSF_2018/Projects/SandwichBeachCam/intrinsic_calibration')
 addpath(genpath('/LocalDisk(D:)/Scordato_SSF_2018/Projects/SandwichBeachCam/meta')
