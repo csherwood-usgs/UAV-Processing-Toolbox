@@ -7,12 +7,14 @@ function P = lcpBeta2P( lcp, beta )
 %   used by findUV6DOF and findXYZnDOF and to make things
 %   for pixel toolbox geometry.
 
+
 K = [lcp.fx 0 lcp.c0U;
      0 -lcp.fy lcp.c0V;
      0  0 1];
 
 R = angles2R(beta(4), beta(5), beta(6));
 IC = [eye(3) -beta(1:3)'];
+IC(:, 4)=0 
 P = K*R*IC;
 P = P/P(3,4);   % unnecessary since we will also normalize UVs
 

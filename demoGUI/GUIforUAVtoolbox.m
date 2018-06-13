@@ -7,7 +7,8 @@ function GUIforUAVtoolbox()
 
 close all
 clc
-
+addpath('/Users/patrickscordato/Desktop/SSF_2018/sandwich_beach_cam/practice/gcp_2015_12_22')
+addpath('/Users/patrickscordato/Desktop/SSF_2018/sandwich_beach_cam/calibration/sandwich_UAV-Processing-Toolbox')
 % Some graphical settings
 % set(0,'DefaultTextFontsize',10, ...
 % 'DefaultTextFontname','Times New Roman', ...
