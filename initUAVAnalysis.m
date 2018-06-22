@@ -1,6 +1,7 @@
 function [beta6DOF,refPoints] = initUAVAnalysis(I, gcp, in, meta)
 %   [beta6DOF,refPoints] = initUAVAnalysis(I, gcps, input, meta)
-%
+
+addpath('/Users/patrickscordato//Users/patrickscordato/Desktop/SSF_2018/sandwich_beach_cam/calibration/sandwich_UAV-Processing-Toolbox')
 % Initialize a UAV movie analysis using the first (or any) frame.
 % Displays the frame and asks user to ginput the locations of points
 % specified in gcpUseList whose locations and id are in gcps.  The
@@ -9,6 +10,11 @@ function [beta6DOF,refPoints] = initUAVAnalysis(I, gcp, in, meta)
 % Stage 2 is the creation of nRefPoints reference points, each expressed in 
 % a structure
 % NOTE - lcp, NU and NV are passed in meta but are made global for nlinfit.  
+
+I= imread('
+gcp= 'demoGCPFile.mat'
+in= 'demoInstsFile.m'
+meta= 'demoInputFile.m'
 
 global globs        % this is only used for output to findUVnDOF
 globs = meta.globals;

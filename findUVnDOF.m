@@ -40,6 +40,7 @@ if length(b)<6      % there are some knowns
 else
     b2 = b;     % fully 6 dof input beta
 end
+lcp = makeLCPFromCaltech('calib_resultsPn')
 lcp = globs.lcp;
 
 P = lcpBeta2P( lcp, b2 );

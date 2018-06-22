@@ -16,7 +16,7 @@ function lcp = makeLCPFromCaltech(calib_resultsPn)
 %
 % Further documentation on how this script works within the UAV Toolbox located here: 
 %   https://github.com/Coastal-Imaging-Research-Network/UAV-Processing-Toolbox/wiki/Supporting-Routine-Docs
-
+calib_resultsPn= '/LocalDisk(D:)/Scordato_SSF_2018/Projects/SandwichBeachCam/intrinsic_calibration/')
 calib_resultsPn= ('D:\Scodato_SSF_2018\Projects\SandwichBeachCam\intrinsic_calibration')
 
 
@@ -26,7 +26,7 @@ end
 if ~strcmp(calib_resultsPn(end),filesep)
     calib_resultsPn = [calib_resultsPn,filesep];
 end
-load([calib_resultsPn,'\Calib_Results.mat'])
+load([calib_resultsPn,'icalibResultsSandwich.mat'])
 
             lcp.NU = nx;     % number of pixel columns
             lcp.NV = ny;     % number of pixel rows

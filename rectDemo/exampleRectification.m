@@ -1,0 +1,1 @@
+frameRect= makeRectSingleFramePracticum(I, xy, z, beta, lcp);
