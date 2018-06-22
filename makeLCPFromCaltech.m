@@ -17,8 +17,11 @@ function lcp = makeLCPFromCaltech(calib_resultsPn)
 % Further documentation on how this script works within the UAV Toolbox located here: 
 %   https://github.com/Coastal-Imaging-Research-Network/UAV-Processing-Toolbox/wiki/Supporting-Routine-Docs
 
+calib_resultsPn= ('D:\Scodato_SSF_2018\Projects\SandwichBeachCam\intrinsic_calibration')
+
+
 if nargin < 1
-    [calib_resultsFn,calib_resultsPn] = uigetfile('*.mat','Select your Calib_Results.mat file');
+    [calib_resultsFn,calib_resultsPn] = uigetfile('*.mat','Calib_Results.mat');
 end
 if ~strcmp(calib_resultsPn(end),filesep)
     calib_resultsPn = [calib_resultsPn,filesep];
